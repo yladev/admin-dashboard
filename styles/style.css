@@ -452,8 +452,14 @@ main .fast-payment .badge{
     background: var(--color-white);
     border-radius: var(--border-radius-2);
     display: flex;
-    align-self: center;
+    align-items: center;
     gap: 1rem;
+    transition: all 300ms ease;
+}
+
+main .fast-payment .badge:hover{
+    box-shadow: 0 0 1.5rem var(--color-primary-light);
+    cursor: pointer;
 }
 
 main .fast-payment .badge:first-child span{
@@ -462,4 +468,10 @@ main .fast-payment .badge:first-child span{
     justify-content: center;
     height: fit-content;
     font-size: 1.5rem;
+}
+
+main .fast-payment .badge div{
+    display: flex;
+    gap: 2rem;
+    align-self: center;
 }
